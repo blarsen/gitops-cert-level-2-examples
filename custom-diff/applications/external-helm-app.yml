@@ -29,5 +29,5 @@ spec:
         - /data
     - group: apps
       kind: Deployment
-      jqPathExpressions:
-        - .spec.metadata.annotations[]|select(.name == "creation")
+      jsonPointers:
+        - /creation
